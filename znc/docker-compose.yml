@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+    znc-server:
+      image: znc
+      restart: always
+      ports:
+         - "2306:2306"
+      volumes:
+         - "znc-cfg:/znc-data"
+
+volumes:
+  znc-cfg:
