@@ -1,0 +1,12 @@
+version: '2.1'
+services:
+
+    openerp-server:
+      image: openerp:Wheezy
+      restart: always
+      ports:
+         - "8069:8069"
+
+    postgresql-server:
+      image: postgres
+      restart: always
